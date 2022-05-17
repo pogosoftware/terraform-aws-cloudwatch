@@ -34,7 +34,7 @@ No resources.
 | <a name="input_cloudwatch_log_resource_policy_name"></a> [cloudwatch\_log\_resource\_policy\_name](#input\_cloudwatch\_log\_resource\_policy\_name) | Required if `create_cloudwatch_log_resource_policy` is set to `true`. Name of the resource policy | `string` | `null` | no |
 | <a name="input_create_cloudwatch_log_group"></a> [create\_cloudwatch\_log\_group](#input\_create\_cloudwatch\_log\_group) | Determinate to create `cloudwatch_log_group` resource or not | `bool` | `true` | no |
 | <a name="input_create_cloudwatch_log_resource_policy"></a> [create\_cloudwatch\_log\_resource\_policy](#input\_create\_cloudwatch\_log\_resource\_policy) | Determinate to create `cloudwatch_log_resource_policy` resource or not | `bool` | `true` | no |
-| <a name="input_use_cloudwatch_log_group_name_prefix"></a> [use\_cloudwatch\_log\_group\_name\_prefix](#input\_use\_cloudwatch\_log\_group\_name\_prefix) | Determinate to use `name_prefix` or not | `bool` | `null` | no |
+| <a name="input_use_cloudwatch_log_group_name_prefix"></a> [use\_cloudwatch\_log\_group\_name\_prefix](#input\_use\_cloudwatch\_log\_group\_name\_prefix) | Determinate to use `name_prefix` or not | `bool` | `false` | no |
 
 ## Outputs
 

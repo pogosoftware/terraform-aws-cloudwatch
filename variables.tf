@@ -29,7 +29,7 @@ variable "create_cloudwatch_log_group" {
 }
 
 variable "use_cloudwatch_log_group_name_prefix" {
-  default     = null
+  default     = false
   description = "Determinate to use `name_prefix` or not"
   type        = bool
 }
