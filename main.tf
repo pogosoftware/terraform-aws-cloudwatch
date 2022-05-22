@@ -47,3 +47,19 @@ module "cloudwatch_metric_alarm" {
   metric_queries                        = var.cloudwatch_metric_alarm_metric_queries
   tags                                  = var.cloudwatch_metric_alarm_tags
 }
+
+module "cloudwatch_event_rule" {
+  source = "./modules/cloudwatch_event_rule"
+
+  count = var.create_cloudwatch_event_rule ? 1 : 0
+
+  name                = local.cloudwatch_event_rule_name
+  name_prefix         = local.cloudwatch_event_rule_name_prefix
+  schedule_expression = var.cloudwatch_event_rule_schedule_expression
+  event_bus_name      = var.cloudwatch_event_rule_event_bus_name
+  event_pattern       = var.cloudwatch_event_rule_event_pattern
+  description         = var.cloudwatch_event_rule_description
+  role_arn            = var.cloudwatch_event_rule_role_arn
+  is_enabled          = var.cloudwatch_event_rule_is_enabled
+  tags                = var.cloudwatch_event_rule_tags
+}
